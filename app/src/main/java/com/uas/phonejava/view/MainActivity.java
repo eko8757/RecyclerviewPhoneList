@@ -1,4 +1,4 @@
-package com.uas.phonejava;
+package com.uas.phonejava.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -17,6 +17,9 @@ import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
+import com.uas.phonejava.R;
+import com.uas.phonejava.adapter.AdapterPhone;
+import com.uas.phonejava.model.ModelPhone;
 
 import java.util.ArrayList;
 import java.util.List;

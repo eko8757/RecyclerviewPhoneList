@@ -1,4 +1,4 @@
-package com.uas.phonejava;
+package com.uas.phonejava.model;
 
 public class ModelPhone {
     String nama;

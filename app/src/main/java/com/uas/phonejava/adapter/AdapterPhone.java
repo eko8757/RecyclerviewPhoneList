@@ -1,4 +1,4 @@
-package com.uas.phonejava;
+package com.uas.phonejava.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.uas.phonejava.model.ModelPhone;
+import com.uas.phonejava.R;
 
 import java.util.List;
 
@@ -31,8 +34,8 @@ public class AdapterPhone extends RecyclerView.Adapter<AdapterPhone.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ModelPhone phone = phoneList.get(position);
-        holder.phone_name.setText(phone.nama);
-        holder.phone_number.setText(phone.nomor);
+        holder.phone_name.setText(phone.getNama());
+        holder.phone_number.setText(phone.getNomor());
     }
 
     @Override
